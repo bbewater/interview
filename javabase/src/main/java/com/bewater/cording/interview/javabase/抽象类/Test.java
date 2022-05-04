@@ -13,5 +13,7 @@ public class Test {
         ②.抽象类不能实例化 SuperClass superClass = new SuperClass();  wrong  因为有抽象方法的存在
         ③.抽象方法可以被继承 子类需重写抽象方法 抽象类的具体方法可无需重写 直接拿来用
          */
+        System.out.println(Jay.a);
+        //Jay.a = 5; //报错  接口中的成员变量必须是public static final修饰的 而抽象类中的成员变量可以是各种类型
     }
 }
