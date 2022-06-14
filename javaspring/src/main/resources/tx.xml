@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    注意初始化指的并不是属性填充  例如下面init-method 这才是初始化(初始化做的操作 执行test方法)-->
+    <bean id="a" class="com.bewater.cording.interview.javaspring.A" init-method="test">
+        <property name="name" value="bewater"></property>
+    </bean>
+    <bean id="b" class="com.bewater.cording.interview.javaspring.B">
+        <property name="age" value="27"></property>
+    </bean>
+
+
+</beans>
